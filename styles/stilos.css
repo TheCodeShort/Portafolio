@@ -1,0 +1,148 @@
+/*los colores los podemos buscar en internet*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*el asterisco nos indica que esta en un alcance global
+osea se va a utilzar todo el tiempo y a su vez los cambios que se hagan*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*crear una variables, como tenemos muchos colores repetidos 
+podemos reunirlos en un solo lado como :root{} y la variable  va a dentro 
+--Nombre de la variable:informacion como colores y desplazamiento*/
+
+:root{
+    --color1:#ffe4b5;
+    --color2: #6a5acd;
+}
+
+body{
+    background-color: 	#ffe4b5;
+    color: 	#6a5acd;
+    box-sizing: border-box;
+}
+.titulo-1{
+    color: #3cb371;
+}
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2.25rem;
+    /*aca escogimos como vamos a poner el estilo de la letra 
+    una ayuda es de GOOGLE FONT donde me da el codigo CSS*/
+    font-family: "Krona One", sans-serif;
+}
+
+.presentacion_contenido_texto{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+.presentacion__enlaces{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces_subtitulo{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion__enlaces__link{
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0px;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #22d4fd;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion__enlaces__link:hover{
+    background-color:#272727;
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display:flex;
+    gap: 80px;
+    
+}
+
+.footer{
+    background-color: #6a5acd;
+    padding: 1.5rem;
+    color: black;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header__menu__link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.header__menu_sobre__mi{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+} 
+
+.presentacion__imagen{
+    width: 50%;
+}
+
+/*aca podemos cuadrar el tamaño de la pagina y como se vera 
+en @media podemos poner un valor y cuando la pagina llegue a 
+ese determinado valor la pagina tomara los valores que le emos asignado
+*/
+@media (max-width: 1200px){
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .header{
+        padding: 10%;
+    }
+
+    .header__menu{
+        justify-content: center;
+    }
+
+    .header__menu{
+        justify-content: center;
+    }
+
+    .presentacion_contenido{
+        width: auto;
+    }
+}

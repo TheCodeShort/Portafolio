@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--el metadato nos sirve para caracteres unicos-->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--de esta manera llamamos hojas de estilo de CSS-->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <!--aca podemos llamar el archivo pára empesar elCSS-->
+    <link rel="stylesheet" href="/styles/stilos.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link">home</a>
+            <a class="header__menu_sobre__mi" href="sobre_mi.html">sobre mi</a>
+        </nav> 
+    </header>
+    <main class="presentacion">
+        <section class="presentacion_contenido">
+            <h1 class="presentacion_contenido_titulo">
+                Eleve tu negocio digital a otro nivel <strong class="titulo-1"> con un Front-end de calidad!</strong>
+            </h1>
+            <p class="presentacion_contenido_texto">
+                ¡Hola! Soy Ana García, desarrolladora Front-end con especialización en
+                React, HTML y CSS. Ayudo a pequeños negocios y diseñadores a llevar a cabo buenas ideas. ¿Hablamos?
+            </p>
+            <div class="presentacion__enlaces">
+                <h2 class="presentacion__enlaces_subtitulo">
+                    Acede a mis redes
+                </h2>
+                <!--si no ponemos en href el link no se va a dirigir a ningun lado-->
+                <a class="presentacion__enlaces__link" href="https://instagram.com/"><img src="IMGS/instagram.png" lang="imagen de instagram">
+                    Instagram</a>
+                <a class="presentacion__enlaces__link" href="https://github.com/"><img src="IMGS/github.png" lang="imagen de Githup">
+                    Githup</a>
+            </div>
+        </section>
+        <!--SRC nos ayuda para llamar o poner la imagen
+        y lang nos sirve para ponerle un nombre descriptibo
+        en caso de no poder ver la imagen-->
+        <img class="presentacion__imagen" src="IMGS/Rectangle 47.png " lang="imagen de una persona mirando osea de ana">
+    </main>
+    <!--footer va lo que es informacion de contacto o links de nuestras redes etc-->
+    <footer class="footer">
+        <p>Desarrollado por alura latam</p>
+    </footer>
+</body> 
+</html>
